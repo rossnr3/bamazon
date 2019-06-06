@@ -8,9 +8,9 @@ customer, manager, and supervisor.
 
 ### Dependencies
 
-**npm install inquirer**
-**npm install mysql**
-**npm install cli-table**
+* npm install inquirer
+* npm install mysql
+* npm install cli-table
 
 ### Customer View
 
@@ -61,7 +61,7 @@ available for sale.
 ![Low Inventory](images/low_inventory.png)
 The **View products with a low inventory** option displays a table of the
 products whose stock level is below the low inventory threshold. If there are
-no products below the low inventory threshold, the user is notified.
+no products below the low inventory threshold, the user is notified.7
 
 ![Add Inventory](images/add_inventory.png)
 The **Add inventory to an item** option allows the user to add inventory for
@@ -71,4 +71,23 @@ a product by item id. If the id is invalid, the user is notfied.
 The **Add a new product** option allows the user to add a new product to the
 database. Edits are performed on the information entered, and any errors are
 displayed to the user.
+
+### Supervisor View
+
+This application view displays a menu for the user to select an action to
+perform.
+
+Supervisor view is started as follows: **node bamazonSupervisor.js**
+
+![Supervisor Start](images/supervisor_start.png)
+The above menu is displayed, and the user is asked to select an action to
+perform.
+
+![Department Profits](images/dept_profit.png)
+The **View product sales by department** option displays a table of the
+total sales by department, and the department's profitability.
+
+![Create Department](images/create_dept.png)
+The **Create new department** option allows the user to create a new
+department, and then displays all departments to the user.
 
