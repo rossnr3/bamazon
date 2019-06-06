@@ -29,15 +29,15 @@ VALUES ('Portable Air Compressor','AUTOMOTIVE',34.87,50),
 
 CREATE TABLE departments(
     department_id SMALLINT AUTO_INCREMENT NOT NULL,
-    department_name VARCHAR(40) NOT NULL,
+    department_name VARCHAR(40) NOT NULL UNIQUE,
     over_head_costs DECIMAL(9,2) NOT NULL DEFAULT 0.0,
     PRIMARY KEY(department_id));
 
 INSERT INTO departments(department_name, over_head_costs)
-VALUES ('AUTOMOTIVE', 1500.00),
-    ('CLOTHING', 2000.00),
-    ('ELECTRONICS', 3000.00),
-    ('TOOLS', 3000.00),
-    ('SOFTWARE', 1200.00),
-    ('KIDS', 4000.00),
-    ('SPORTS', 1200.00);
+VALUES ('AUTOMOTIVE', 150.00),
+    ('CLOTHING', 200.00),
+    ('ELECTRONICS', 300.00),
+    ('TOOLS', 300.00),
+    ('SOFTWARE', 120.00),
+    ('KIDS', 400.00),
+    ('SPORTS', 120.00);
